@@ -1,0 +1,309 @@
+{
+  "provenance": "fictional_authorized_graphs_and_hidden_worlds_real_executable_route_algorithms",
+  "permission": "authorization_is_an_input_constraint_not_inferred_from_access_or_clarification",
+  "comparison_control": "all_policies_receive_identical_graph_now_and_hidden_world_per_scenario",
+  "question_cost_seconds": 5,
+  "failed_access_penalty_seconds": 30,
+  "all_worlds_matched": true,
+  "experiments": [
+    {
+      "scenario": "stale_north_two_entrances",
+      "policies": [
+        {
+          "policy": "flat",
+          "completed_authorized_route": false,
+          "route": [
+            "north_walk",
+            "north_gate",
+            "unit_walk"
+          ],
+          "planning_status": "route",
+          "questions": [],
+          "clarification_count": 0,
+          "blocked_edge": "north_gate",
+          "blocked_access_attempts": 1,
+          "travel_seconds": 7,
+          "clarification_seconds": 0,
+          "failed_access_penalty_seconds": 30,
+          "planned_departure_seconds": 100,
+          "total_simulated_seconds": 37,
+          "oracle_authorized_travel_seconds": 15,
+          "successful_route_regret_seconds": null,
+          "hidden_world_sha256": "b4466c1eb01f317a26bd2594f784722f07c75cad98e348d89eca6d0cdccd37db",
+          "graph_sha256": "0a3f9d3ad842138985bdbc73ef2d65cec98e8eaf98595bf580aa814f96a0f3a6"
+        },
+        {
+          "policy": "shortest",
+          "completed_authorized_route": false,
+          "route": [
+            "north_walk",
+            "north_gate",
+            "unit_walk"
+          ],
+          "planning_status": "route",
+          "questions": [],
+          "clarification_count": 0,
+          "blocked_edge": "north_gate",
+          "blocked_access_attempts": 1,
+          "travel_seconds": 7,
+          "clarification_seconds": 0,
+          "failed_access_penalty_seconds": 30,
+          "planned_departure_seconds": 100,
+          "total_simulated_seconds": 37,
+          "oracle_authorized_travel_seconds": 15,
+          "successful_route_regret_seconds": null,
+          "hidden_world_sha256": "b4466c1eb01f317a26bd2594f784722f07c75cad98e348d89eca6d0cdccd37db",
+          "graph_sha256": "0a3f9d3ad842138985bdbc73ef2d65cec98e8eaf98595bf580aa814f96a0f3a6"
+        },
+        {
+          "policy": "clarification",
+          "completed_authorized_route": true,
+          "route": [
+            "south_walk",
+            "south_gate",
+            "unit_walk"
+          ],
+          "planning_status": "route",
+          "questions": [
+            {
+              "edge_id": "north_gate",
+              "answer_open": false,
+              "score": 0.07692308,
+              "reason": "route_coverage_weighted_by_inverse_travel_cost",
+              "provenance": "fictional_recipient_response"
+            },
+            {
+              "edge_id": "south_gate",
+              "answer_open": true,
+              "score": 0.0625,
+              "reason": "route_coverage_weighted_by_inverse_travel_cost",
+              "provenance": "fictional_recipient_response"
+            }
+          ],
+          "clarification_count": 2,
+          "blocked_edge": null,
+          "blocked_access_attempts": 0,
+          "travel_seconds": 15,
+          "clarification_seconds": 10,
+          "failed_access_penalty_seconds": 0,
+          "planned_departure_seconds": 110,
+          "total_simulated_seconds": 25,
+          "oracle_authorized_travel_seconds": 15,
+          "successful_route_regret_seconds": 10,
+          "hidden_world_sha256": "b4466c1eb01f317a26bd2594f784722f07c75cad98e348d89eca6d0cdccd37db",
+          "graph_sha256": "0a3f9d3ad842138985bdbc73ef2d65cec98e8eaf98595bf580aa814f96a0f3a6"
+        }
+      ]
+    },
+    {
+      "scenario": "fully_known_single_entrance",
+      "policies": [
+        {
+          "policy": "flat",
+          "completed_authorized_route": true,
+          "route": [
+            "north_walk",
+            "north_gate",
+            "unit_walk"
+          ],
+          "planning_status": "route",
+          "questions": [],
+          "clarification_count": 0,
+          "blocked_edge": null,
+          "blocked_access_attempts": 0,
+          "travel_seconds": 12,
+          "clarification_seconds": 0,
+          "failed_access_penalty_seconds": 0,
+          "planned_departure_seconds": 100,
+          "total_simulated_seconds": 12,
+          "oracle_authorized_travel_seconds": 12,
+          "successful_route_regret_seconds": 0,
+          "hidden_world_sha256": "6fcaa865ef71238052a98840fbd115ff454055defdee366bfa8e0f93e039ce8c",
+          "graph_sha256": "bc59bc9388fe94f616797c40ca3d5ddbebc376a76ca86af10f0ed1f4c3abe194"
+        },
+        {
+          "policy": "shortest",
+          "completed_authorized_route": true,
+          "route": [
+            "north_walk",
+            "north_gate",
+            "unit_walk"
+          ],
+          "planning_status": "route",
+          "questions": [],
+          "clarification_count": 0,
+          "blocked_edge": null,
+          "blocked_access_attempts": 0,
+          "travel_seconds": 12,
+          "clarification_seconds": 0,
+          "failed_access_penalty_seconds": 0,
+          "planned_departure_seconds": 100,
+          "total_simulated_seconds": 12,
+          "oracle_authorized_travel_seconds": 12,
+          "successful_route_regret_seconds": 0,
+          "hidden_world_sha256": "6fcaa865ef71238052a98840fbd115ff454055defdee366bfa8e0f93e039ce8c",
+          "graph_sha256": "bc59bc9388fe94f616797c40ca3d5ddbebc376a76ca86af10f0ed1f4c3abe194"
+        },
+        {
+          "policy": "clarification",
+          "completed_authorized_route": true,
+          "route": [
+            "north_walk",
+            "north_gate",
+            "unit_walk"
+          ],
+          "planning_status": "route",
+          "questions": [],
+          "clarification_count": 0,
+          "blocked_edge": null,
+          "blocked_access_attempts": 0,
+          "travel_seconds": 12,
+          "clarification_seconds": 0,
+          "failed_access_penalty_seconds": 0,
+          "planned_departure_seconds": 100,
+          "total_simulated_seconds": 12,
+          "oracle_authorized_travel_seconds": 12,
+          "successful_route_regret_seconds": 0,
+          "hidden_world_sha256": "6fcaa865ef71238052a98840fbd115ff454055defdee366bfa8e0f93e039ce8c",
+          "graph_sha256": "bc59bc9388fe94f616797c40ca3d5ddbebc376a76ca86af10f0ed1f4c3abe194"
+        }
+      ]
+    },
+    {
+      "scenario": "no_authorized_open_route",
+      "policies": [
+        {
+          "policy": "flat",
+          "completed_authorized_route": false,
+          "route": [
+            "north_walk",
+            "north_gate",
+            "unit_walk"
+          ],
+          "planning_status": "route",
+          "questions": [],
+          "clarification_count": 0,
+          "blocked_edge": "north_gate",
+          "blocked_access_attempts": 1,
+          "travel_seconds": 7,
+          "clarification_seconds": 0,
+          "failed_access_penalty_seconds": 30,
+          "planned_departure_seconds": 100,
+          "total_simulated_seconds": 37,
+          "oracle_authorized_travel_seconds": null,
+          "successful_route_regret_seconds": null,
+          "hidden_world_sha256": "6e07c8b4322f617e619546d42e40ac05d249185d777682e49ef3ab5a1f66b026",
+          "graph_sha256": "22f2713c91d1db5ea5926fad8d2c60efb773d9db27b83fa175218f42c2e9fac9"
+        },
+        {
+          "policy": "shortest",
+          "completed_authorized_route": false,
+          "route": [],
+          "planning_status": "no_feasible_authorized_route",
+          "questions": [],
+          "clarification_count": 0,
+          "blocked_edge": null,
+          "blocked_access_attempts": 0,
+          "travel_seconds": 0,
+          "clarification_seconds": 0,
+          "failed_access_penalty_seconds": 0,
+          "planned_departure_seconds": 100,
+          "total_simulated_seconds": 0,
+          "oracle_authorized_travel_seconds": null,
+          "successful_route_regret_seconds": null,
+          "hidden_world_sha256": "6e07c8b4322f617e619546d42e40ac05d249185d777682e49ef3ab5a1f66b026",
+          "graph_sha256": "22f2713c91d1db5ea5926fad8d2c60efb773d9db27b83fa175218f42c2e9fac9"
+        },
+        {
+          "policy": "clarification",
+          "completed_authorized_route": false,
+          "route": [],
+          "planning_status": "no_feasible_authorized_route",
+          "questions": [],
+          "clarification_count": 0,
+          "blocked_edge": null,
+          "blocked_access_attempts": 0,
+          "travel_seconds": 0,
+          "clarification_seconds": 0,
+          "failed_access_penalty_seconds": 0,
+          "planned_departure_seconds": 100,
+          "total_simulated_seconds": 0,
+          "oracle_authorized_travel_seconds": null,
+          "successful_route_regret_seconds": null,
+          "hidden_world_sha256": "6e07c8b4322f617e619546d42e40ac05d249185d777682e49ef3ab5a1f66b026",
+          "graph_sha256": "22f2713c91d1db5ea5926fad8d2c60efb773d9db27b83fa175218f42c2e9fac9"
+        }
+      ]
+    },
+    {
+      "scenario": "unconfirmed_unaskable_access",
+      "policies": [
+        {
+          "policy": "flat",
+          "completed_authorized_route": true,
+          "route": [
+            "north_walk",
+            "north_gate",
+            "unit_walk"
+          ],
+          "planning_status": "route",
+          "questions": [],
+          "clarification_count": 0,
+          "blocked_edge": null,
+          "blocked_access_attempts": 0,
+          "travel_seconds": 12,
+          "clarification_seconds": 0,
+          "failed_access_penalty_seconds": 0,
+          "planned_departure_seconds": 100,
+          "total_simulated_seconds": 12,
+          "oracle_authorized_travel_seconds": 12,
+          "successful_route_regret_seconds": 0,
+          "hidden_world_sha256": "6fcaa865ef71238052a98840fbd115ff454055defdee366bfa8e0f93e039ce8c",
+          "graph_sha256": "7f653e5afe50b89ee1bfcdb99ec3c32a39c9e62f1aecd12ad2e7963dbbe2f43f"
+        },
+        {
+          "policy": "shortest",
+          "completed_authorized_route": true,
+          "route": [
+            "north_walk",
+            "north_gate",
+            "unit_walk"
+          ],
+          "planning_status": "route",
+          "questions": [],
+          "clarification_count": 0,
+          "blocked_edge": null,
+          "blocked_access_attempts": 0,
+          "travel_seconds": 12,
+          "clarification_seconds": 0,
+          "failed_access_penalty_seconds": 0,
+          "planned_departure_seconds": 100,
+          "total_simulated_seconds": 12,
+          "oracle_authorized_travel_seconds": 12,
+          "successful_route_regret_seconds": 0,
+          "hidden_world_sha256": "6fcaa865ef71238052a98840fbd115ff454055defdee366bfa8e0f93e039ce8c",
+          "graph_sha256": "7f653e5afe50b89ee1bfcdb99ec3c32a39c9e62f1aecd12ad2e7963dbbe2f43f"
+        },
+        {
+          "policy": "clarification",
+          "completed_authorized_route": false,
+          "route": [],
+          "planning_status": "handoff_required_unconfirmed_access",
+          "questions": [],
+          "clarification_count": 0,
+          "blocked_edge": null,
+          "blocked_access_attempts": 0,
+          "travel_seconds": 0,
+          "clarification_seconds": 0,
+          "failed_access_penalty_seconds": 0,
+          "planned_departure_seconds": 100,
+          "total_simulated_seconds": 0,
+          "oracle_authorized_travel_seconds": 12,
+          "successful_route_regret_seconds": null,
+          "hidden_world_sha256": "6fcaa865ef71238052a98840fbd115ff454055defdee366bfa8e0f93e039ce8c",
+          "graph_sha256": "7f653e5afe50b89ee1bfcdb99ec3c32a39c9e62f1aecd12ad2e7963dbbe2f43f"
+        }
+      ]
+    }
+  ]
+}
